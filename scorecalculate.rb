@@ -1,6 +1,6 @@
 class ScoreCalculate
 
-	def initialize()
+  def initialize()
     @score_array = ["Bob,97", "Charles,80", "Bob,50","Charles,90","Amy,80"]
     @name_to_score = Hash.new { |hash, key| hash[key] = 0 }
     @name_to_count = Hash.new { |hash, key| hash[key] = 0 }
@@ -14,7 +14,7 @@ class ScoreCalculate
       avg = score / @name_to_count[name]
       @name_to_avg_score[name] = avg
     end
-	end
+  end
 
   def summary()
     #display all average
